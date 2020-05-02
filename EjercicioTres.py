@@ -16,19 +16,35 @@ while x == False and y == False:
         print("Número inválido")
         y = True
 
-if y == False:
+if y == False and lista:
     while len(listaF) < max(lista):
         d = 2
         feo = False
         cont = 0
+
         while d <= i:
             if i % 2 == 0 or i % 3 == 0 or i % 5 == 0:
                 feo = True
-            elif i % d == 0:
+
+            if d != 2 and d != 3 and d != 5:
+                p = 1
+                contPrim = 0
+                while p <= d:
+                    if d % p == 0:
+                        contPrim = contPrim + 1
+                    p = p +1
+                if contPrim <= 2:
+                    if i % d == 0:
+                        feo = False
+
+            if feo == False:
                 cont = cont + 1
+
             d = d + 1
-        if feo == True and cont < 2:
+
+        if feo == True and cont == 0:
             listaF.append(i)
+
         i = i + 1
 
 print()
