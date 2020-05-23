@@ -17,3 +17,5 @@ posiciones, este se detendrá una vez que el usuario introduzca un cero, por med
 posiciones se encuentren entre el 1 y el 1500. Para evitar que el programa hiciera una arreglo de números feos del 1 al
 1500, este busca la posición más grande que introduzca el usuario para llegar hasta ese limite, el programa procede a crear
 un arreglo de números feos con ese límite y después imprime los valores de las posiciones que dio el usuario.
+
+4. Por medio de un while le permite al usuario introducir varios números a la vez, para que el programa posteriormente calcule las regiones en las que se divide el círculo, e imprima los resultados.
